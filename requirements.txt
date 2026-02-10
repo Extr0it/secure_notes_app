@@ -1,0 +1,14 @@
+#lista de librării Python pe care aplicația le foloseste
+
+fastapi
+uvicorn[standard]
+sqlalchemy
+psycopg2-binary
+python-dotenv
+passlib[bcrypt]
+bcrypt==4.0.1
+python-jose[cryptography]
+python-multipart
+
+#JWT = un “bilet” JSON semnat, trimis între client și server, care dovedește cine ești și ce ai voie să faci.
+
