@@ -3,9 +3,9 @@ services:
     image: postgres:16
     container_name: secure_notes_db
     environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: password
-      POSTGRES_DB: secure_notes
+      POSTGRES_USER: pppppp
+      POSTGRES_PASSWORD: pppppp
+      POSTGRES_DB: ppppppp
     ports:
       - "5432:5432"
     volumes:
@@ -30,3 +30,4 @@ services:
 
 volumes:
   pgdata:
+
