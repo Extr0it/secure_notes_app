@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Notes</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>🔐 Secure Notes</h1>
+
+        <!-- AUTH -->
+        <div id="authSection">
+
+            <!-- REGISTER -->
+            <div class="box">
+                <h2>Register</h2>
+
+                <input type="text" id="registerUsername" placeholder="Username">
+                <input type="password" id="registerPassword" placeholder="Password">
+
+                <button id="registerBtn">Register</button>
+            </div>
+
+            <!-- LOGIN -->
+            <div class="box">
+                <h2>Login</h2>
+
+                <input type="text" id="loginUsername" placeholder="Username">
+                <input type="password" id="loginPassword" placeholder="Password">
+
+                <button id="loginBtn">Login</button>
+            </div>
+
+        </div>
+
+        <!-- NOTES -->
+        <div id="notesSection" class="hidden">
+
+            <button id="logoutBtn">Logout</button>
+
+            <!-- CREATE NOTE -->
+            <div class="box">
+
+                <h2>Create Note</h2>
+
+                <input type="text" id="noteTitle" placeholder="Title">
+
+                <textarea id="noteContent" placeholder="Write your note..."></textarea>
+
+                <button id="createNoteBtn">Create Note</button>
+
+            </div>
+
+            <!-- NOTES LIST -->
+            <div class="box">
+
+                <h2>Your Notes</h2>
+
+                <button id="loadNotesBtn">Load Notes</button>
+
+                <div id="notesContainer"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
