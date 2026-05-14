@@ -1,5 +1,5 @@
 from sqlalchemy import Column,Integer, String
-from database import Base #base e legatura dintre db si python
+from app.database import Base #base e legatura dintre db si python
 
 class Note(Base): #class Note extends Base(JAVA)
     __tablename__ = "notes"

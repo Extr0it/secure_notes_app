@@ -9,8 +9,8 @@ from datetime import datetime, timedelta,timezone
 from fastapi import Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
 from jose import JWTError
-from database import SessionLocal
-from models import User
+from app.database import SessionLocal
+from app.models import User
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="login")
 

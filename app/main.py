@@ -1,11 +1,11 @@
 from fastapi import FastAPI, Depends
 #Dependency injection
-from database import engine,SessionLocal
-from models import Note, User
+from app.database import engine,SessionLocal
+from app.models import Note, User
 from sqlalchemy.orm import Session
-from database import Base
-from security import encrypt, decrypt, hash_password, verify_password, create_access_token, get_current_user
-from schemas import NoteCreate, NoteDelete, NoteModify, UserCreate
+from app.database import Base
+from app.security import encrypt, decrypt, hash_password, verify_password, create_access_token, get_current_user
+from app.schemas import NoteCreate, NoteDelete, NoteModify, UserCreate
 from fastapi.security import OAuth2PasswordRequestForm
 
 from fastapi.middleware.cors import CORSMiddleware #CORS
